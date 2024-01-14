@@ -10,14 +10,14 @@ class TestController extends Controller
 {
     public function test()
     {
-        $tests = Test::all();
+        $tests = Test::skip(1)->take(1)->get();
         $first = Test::value('newstitle');
-        return view('weakness', compact('first'));
-
-
+        return view('weakness', compact('first','tests'));
     }
+
     public function createTestData()
     {
+
         Test::create([
             'img_path' => 'your_image_path',
             'newstitle' => 'your_title',

@@ -147,6 +147,7 @@
     <div class="title">
         <p>你 是 色 弱 嗎 ?</p>
         <p> {{$first}}</p>
+        <p> {{$tests->first()->img_path}}</p>
         <button type="button" class="btn-warning start">開始測驗</button>
     </div>
     <div class="container">
@@ -160,19 +161,6 @@
         <div class="plate"></div>
         <button type="button" class="btn-warning clear ">重來</button>
     </div>
-    <!-- 需求 -->
-    <!-- 要有得分 顯示在畫面上 OK!
-    要能依據得分 增加等級 OK!
-    答案的透明度要依據等級越來越透明 OK!
-    進入遊戲的時候 顏色不能死定 OK!
-    選到正解 要換色換答案 OK!
-    選錯有逞罰 OK!
-    <!-- 挑戰 -->
-    <!-- 設置開始頁面 點及遊玩開始遊戲 OK!
-    計時器 加入計時 OK!
-    加入再開功能 OK!
-    提示功能：提示答案位置 可以設置可使用次數 OK!
-    遊戲結束或者中途想重玩 可以重新開始 OK! -->
     <script>
 
         // 宣告-----
