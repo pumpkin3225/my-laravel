@@ -14,7 +14,7 @@ class Test extends Model
      */
     protected $primaryKey = 'id';
 
-    use HasFactory;
+
     protected $fillable = [
         'img_path',
         'newstitle',
